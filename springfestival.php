@@ -1,7 +1,7 @@
 <?php include("header.html"); ?>
 
 <!-- Carousel -->
-
+<!--
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -23,8 +23,9 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+-->
 
-<!-- Nav -->azeazeazeazeaze
+<!-- Nav -->
 
 <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
@@ -37,6 +38,14 @@
         <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
     </div>
 </nav>
+
+<div class="section_video"> 
+    <p id="timer"></p>
+    <video autoplay muted loop id="bgvid" >
+        <source src="vidéo/Spring_19.mp4" type="video/mp4">
+    </video>
+</div>
+
 
 <!-- Vidéo -->
 
