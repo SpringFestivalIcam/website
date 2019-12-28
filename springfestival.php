@@ -29,6 +29,21 @@
 
 <nav class="site-header sticky-top py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a href="https://www.facebook.com/Spring.Festival.Icam/" target="_blank" class="white-text valign-wrapper" data-tooltip="Facebook">
+        <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <!-- <a href="#" class="white-text valign-wrapper">
+        <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a href="#" class="white-text valign-wrapper">
+        <i class="fab fa-linkedin fa-3x"></i>
+        </a> -->
+        <a href="https://www.youtube.com/channel/UCbFhqvV353IVbKRWySVBGJw/featured" target="_blank" class="white-text valign-wrapper">
+        <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/springfestivalicam/" class="white-text valign-wrapper" target="_blank" data-tooltip="Instagram">
+        <i class="fab fa-instagram fa-3x"></i>
+        </a>
         <a class="py-2 d-none d-md-inline-block" href="#">Spring</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Festival</a>
         <a class="py-2 d-none d-md-inline-block" href="#">Promotion</a>
@@ -39,10 +54,11 @@
     </div>
 </nav>
 
-<div class="section_video"> 
+<div class="section_video">
     <p id="timer"></p>
-    <video autoplay muted loop id="bgvid" >
-        <source src="vidéo/Spring_19.mp4" type="video/mp4">
+    <br>
+    <video autoplay muted loop id="bgvid">
+        <source src="video/Spring_19.mp4" type="video/mp4">
     </video>
 </div>
 
@@ -125,5 +141,17 @@
     <br>
 
 </div>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.scrollspy').scrollSpy({
+                    scrollOffset: 0,
+                });
+            });
+        </script>
 
 <?php include("footer.html"); ?>
