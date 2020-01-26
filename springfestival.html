@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="images\spring_festival_2020.jpg">
+        <title>Spring Festival</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/3ad9c81434.js"></script>
+        
+        <link href="css\navbar.css" rel="stylesheet">
+        <link href="css\footer.css" rel="stylesheet">
+        <link href="css\main.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+<!-- Carousel -->
+<!-- Test commit -->
+
+<!--
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images\spring_date.jpg" alt="First slide"  height="730">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images\sp2wp.jpg" alt="Second slide"  height="730">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images\logo.jpg" alt="Third slide" height="730">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+-->
+
+<!-- Nav -->
+
+<nav class="site-header sticky-top py-1">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <a href="https://www.facebook.com/Spring.Festival.Icam/" target="_blank" class="white-text valign-wrapper" data-tooltip="Facebook">
+        <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <!-- <a href="#" class="white-text valign-wrapper">
+        <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a href="#" class="white-text valign-wrapper">
+        <i class="fab fa-linkedin fa-3x"></i>
+        </a> -->
+        <a href="https://www.youtube.com/channel/UCbFhqvV353IVbKRWySVBGJw/featured" target="_blank" class="white-text valign-wrapper">
+        <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/springfestivalicam/" class="white-text valign-wrapper" target="_blank" data-tooltip="Instagram">
+        <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Spring</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Festival</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Promotion</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Sponsors</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">PayIcam</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Social Network</a>
+        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
+    </div>
+</nav>
+
+<!-- Picture -->
+<div class="container parent">
+    <img class="responsive-img" src="images\spring.jpg" alt="Spring" style="width:100%;">
+
+<!-- Timer -->
+<br><div class="middle-picture"><h1>COMING SOON !</h1><h1 id="timer"></h1></div>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 25, 2020 18:00:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Display the result in the element with id="demo"
+        document.getElementById("timer").innerHTML = days + "j " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+        // If the count down is finished, write some text
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+</div>
+
+
+
+<!-- Vidéo -->
+
+<p>
+    <center>
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/9AeS6aR3PRU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+</p>
+
+<!-- Chapters -->
+
+<div class="container marketing">
+    <center>
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="images\logo.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Ingénierie</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="images\logo.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Art et Musique</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded-circle" src="images\logo.jpg" alt="Generic placeholder image" width="140" height="140">
+                <h2>Rencontres</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details</a></p>
+            </div>
+        </div>
+    </center>
+</div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card brown darken-1
+    ">
+                <div class="card-content white-text">
+                    <span class="card-title">Ingénierie</span>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card green darken-2">
+                <div class="card-content white-text">
+                    <span class="card-title">Art et musique</span>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Rencontres</span>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <h1> Ils nous supportent ! </h1>
+        <div class="row">
+            <!-- Tesla -->
+            <div class="col s12 m12">
+                <div class="sponsors-card card col s3 m3 l3">
+                    <div class="card-image">
+                        <img class="sponsors" src="images/tesla.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Tesla</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.tesla.com/en_eu">Tesla</a>
+                    </div>
+                </div>
+            <!-- Space x -->
+                <div class="sponsors-card card col s3 m3 l3 ">
+                    <div class="card-image">
+                        <img class="sponsors" src="images/space x.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Space X</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.spacex.com/">Space X</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.scrollspy').scrollSpy({
+                    scrollOffset: 0,
+                });
+            });
+        </script>
+
+        <footer class="footer-basic-centered">
+            <p class="footer-company-motto">Spring Festival 2020</p>
+            <p class="footer-links">
+                <a href="https://www.icam.fr/">Icam</a>
+                ·
+                <a href="https://www.facebook.com/Spring.Festival.Icam/">Facebook</a>
+                ·
+                <a href="#">Instagram</a>
+                ·
+                <a href="https://payicam.icam.fr/accueil-payicam/connection.php">PayIcam</a>
+                ·
+                <a href="#">FAQ</a>
+            </p>
+            <p class="footer-company-name">ICAM site de Lille - Promotion 2021</p>
+        </footer>
+</html>
