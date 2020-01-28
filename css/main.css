@@ -37,7 +37,7 @@
 }
 .middle-picture {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -53,6 +53,18 @@
   max-height: 200px;
 } 
 
-.sponsors-card {
-  margin: 5px;
+.parallax-container {
+  height: 600px;
+}
+
+.sponsors-logo {
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.sponsors-logo img{
+  max-height: 100px;
+  max-width: 100px;
 }
