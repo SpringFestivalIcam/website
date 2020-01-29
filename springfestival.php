@@ -1,16 +1,14 @@
 <?php include("header.html"); ?>
 
 <!-- Carousel -->
-<!-- Test commit -->
 
-<!--
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="images\spring_date.jpg" alt="First slide"  height="730">
+            <img class="d-block w-100" src="images\spring_date.jpg" alt="First slide" height="730">
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="images\sp2wp.jpg" alt="Second slide"  height="730">
+            <img class="d-block w-100" src="images\sp2wp.jpg" alt="Second slide" height="730">
         </div>
         <div class="carousel-item">
             <img class="d-block w-100" src="images\logo.jpg" alt="Third slide" height="730">
@@ -25,45 +23,18 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
--->
 
-<!-- Nav -->
 
-<nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a href="https://www.facebook.com/Spring.Festival.Icam/" target="_blank" class="white-text valign-wrapper" data-tooltip="Facebook">
-        <i class="fab fa-facebook fa-3x"></i>
-        </a>
-        <!-- <a href="#" class="white-text valign-wrapper">
-        <i class="fab fa-twitter fa-3x"></i>
-        </a>
-        <a href="#" class="white-text valign-wrapper">
-        <i class="fab fa-linkedin fa-3x"></i>
-        </a> -->
-        <a href="https://www.youtube.com/channel/UCbFhqvV353IVbKRWySVBGJw/featured" target="_blank" class="white-text valign-wrapper">
-        <i class="fab fa-youtube fa-3x"></i>
-        </a>
-        <a href="https://www.instagram.com/springfestivalicam/" class="white-text valign-wrapper" target="_blank" data-tooltip="Instagram">
-        <i class="fab fa-instagram fa-3x"></i>
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Spring</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Festival</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Promotion</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Sponsors</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">PayIcam</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Social Network</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-    </div>
-</nav>
-
-<div class="section_video">
+<!-- <div class="section_video">
     <p id="timer"></p>
     <br>
     <video autoplay muted loop id="bgvid">
         <source src="video/Spring_19.mp4" type="video/mp4">
     </video>
-</div>
+</div> -->
 
+<!-- Nav -->
+<?php include("navbar.html"); ?>
 
 <!-- Vidéo -->
 
@@ -133,7 +104,6 @@
     <h5>Ingénierie</h5>
     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-    <br>
     <h5>Art et musique</h5>
     <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
     <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
